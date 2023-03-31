@@ -55,8 +55,6 @@ public class Server {
                 bufferedWriter.newLine();
                 bufferedWriter.flush();
 
-
-
                 //Avsluta om QUIT
 
                 if (message.equalsIgnoreCase("quit")) break;
@@ -81,7 +79,6 @@ public class Server {
         }
 
     }
-
     static String openUpData(String message) throws ParseException, IOException {
         //Steg 1. Bygg upp JSON Object basserat på inkommande string
         JSONParser parser = new JSONParser();
